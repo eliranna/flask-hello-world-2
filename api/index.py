@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ def home():
 
 @app.route('/api/about')
 def about():
-  return 'About2'
+  return jsonify({'text': 'reply'})
 
 
-#app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=81)
