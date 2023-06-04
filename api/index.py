@@ -8,7 +8,7 @@ def home():
   return 'Hello, World2!'
 
 
-@app.route('/about')
+@app.route('/api/about')
 def about():
   return 'About2'
 
